@@ -1,0 +1,27 @@
+{
+  "name": "ono-tebe-nado-fd",
+  "version": "1.0.0",
+  "description": "https://github.com/tochitopor/ono-tebe-nado-fd",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './**/*.{html,css,js}'",
+    "format": "prettier --write './**/*.{html,css,js}'",
+    "lint": "stylelint '**/*.css'",
+    "lintfix": "stylelint '**/*.css' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tochitopor/ono-tebe-nado-fd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tochitopor/ono-tebe-nado-fd/issues"
+  },
+  "homepage": "https://github.com/tochitopor/ono-tebe-nado-fd#readme",
+  "dependencies": {
+    "prettier": "^3.5.3",
+    "stylelint": "^16.20.0"
+  }
+}
