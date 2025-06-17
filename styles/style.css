@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;/**/
+  align-items: center;/**/
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -16,6 +19,49 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+}
+
+.content {
+  width: 1140px;/**/
+  display: grid;/**/
+  grid-template-areas: "result content__details";
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+  align-content: start;/**/
+}
+
+.result {
+  /*width: 711px;/**/
+  grid-area: result;
+  align-self: center;
+  /*background-color: blue;/**/
+}
+
+.result__video {
+  height: 100%;
+  width: 100%;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__details {
+  height: 100%;/**/
+  width: 100%;/**/
+  grid-area: content__details;
+  /*background-color: green;/**/
+}
+
+.content__list-container {
+  height: 566px;
+  overflow: scroll;
+}
+
+.content__video-card-thumbnail {
+  height: 100%;/**/
+  width: 100%;/**/
 }
 
 h1,
