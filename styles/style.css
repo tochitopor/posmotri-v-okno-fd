@@ -101,6 +101,8 @@ html {
   border: inherit;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
+  border-left: 1px solid rgb(255 255 255 / 0);
+  border-right: 1px solid rgb(255 255 255 / 0);
 
   appearance: none;
 
@@ -108,14 +110,28 @@ html {
   background-color: inherit;
 }
 
+.search-form__textfield:active {
+  border-left: 1px solid #FFF;
+  border-right: 1px solid #FFF;
+}
+
 .search-form__textfield:focus {
   outline: none;
 }
 
-.search-form__textfield:focus-visible {
+.search-form__label:has(.search-form__textfield:focus-visible) {
   outline: 1px solid #FFF;
   outline-offset: 1px;
 }
+
+.search-form__textfield:focus-visible {
+  outline: none;
+}
+
+.search-form__textfield::placeholder {
+  color: rgb(255 255 255 / 0.7);
+}
+
 
 .search-form__checkbox-list {
   display: flex;
