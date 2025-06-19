@@ -42,7 +42,7 @@ html {
 .result__video-container {
   width: 711px;
   height: 386px;
-  margin-bottom: 21px;/**/
+  margin-bottom: 17px;
 }
 
 .result__video {
@@ -61,8 +61,8 @@ html {
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
-  border: none
+  row-gap: 8px;
+  border: none;
 }
 
 .search-form__label {
@@ -95,6 +95,10 @@ html {
 }
 
 .search-form__textfield {
+  width: 225px;
+  height: 27px;
+
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
@@ -139,6 +143,7 @@ html {
   display: flex;
   align-items: center;
   column-gap: 15px;
+  margin-bottom: 5px;
 }
 
 .search-form__pseudo-checkbox {
@@ -218,9 +223,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 .content__card-link {
   text-decoration: none;
   color: #FFF;
-  /*display: block;/**/
-
-  background-color: aqua;
+  display: block;
 }
 
 .content__video-card {
@@ -290,7 +293,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   line-height: 100%;
   letter-spacing: 0%;
   color: #FFF;
-  color: red;
 
   background-color: transparent;
 }
