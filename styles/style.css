@@ -10,8 +10,8 @@ html {
 
 .page {
   display: flex;
-  justify-content: center;/**/
-  align-items: center;/**/
+  justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -22,27 +22,25 @@ html {
 }
 
 .content {
-  width: 1140px;/**/
-  display: grid;/**/
+  width: 1140px;
+  display: grid;/
   grid-template-areas: "result content__details";
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
-  align-content: start;/**/
-  justify-content: end;/**/
-  /*background-color: blue;/**/
+  align-content: start;
+  justify-content: end;
 }
 
 .result {
-  /*width: 711px;/**/
   grid-area: result;
   align-self: end;
-  /*background-color: blue;/**/
 }
 
 .result__video-container {
   width: 711px;
   height: 386px;
   margin-bottom: 17px;
+  cursor: pointer;
 }
 
 .result__video {
@@ -55,7 +53,6 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: end;
-  /*background-color: blue;/**/
 }
 
 .search-form__fieldset {
@@ -70,11 +67,12 @@ html {
   align-items: center;
   column-gap: 5px;
   width: fit-content;
-  /*background-color: green;/**/
+  cursor: pointer;
 }
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .search-form__fieldset-title {
@@ -128,7 +126,6 @@ html {
   color: rgb(255 255 255 / 0.7);
 }
 
-
 .search-form__checkbox-list {
   display: flex;
   align-items: center;
@@ -167,7 +164,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   display: grid;
   row-gap: 22px;
 
-  /*background-color: green;/**/
 }
 
 .title {
@@ -192,7 +188,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-
 }
 
 .content__list-item {
@@ -204,6 +199,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   text-decoration: none;
   color: #FFF;
   display: block;
+  cursor: pointer;
 }
 
 .content__card-link:hover {
@@ -271,6 +267,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .button {
   border: 1px solid #FFF;
+  cursor: pointer;
 
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
@@ -307,6 +304,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 .more-button{
   min-width: 390px;
   height: 34px;
+  margin-top: 30px;
 }
 
 h1,
