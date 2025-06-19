@@ -23,7 +23,7 @@ html {
 
 .content {
   width: 1140px;
-  display: grid;/
+  display: grid;
   grid-template-areas: "result content__details";
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
@@ -126,6 +126,7 @@ html {
   color: rgb(255 255 255 / 0.7);
 }
 
+
 .search-form__checkbox-list {
   display: flex;
   align-items: center;
@@ -163,7 +164,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
   grid-area: content__details;
   display: grid;
   row-gap: 22px;
-
 }
 
 .title {
@@ -281,6 +281,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
 
 .button:hover {
   text-decoration: underline;
+  
 }
 
 .button:active {
